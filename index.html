@@ -7,7 +7,7 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title></title>
-    <link href="stylesheets/application-acf62c1f.css" rel="stylesheet" />
+    <link href="stylesheets/application-20bd843e.css" rel="stylesheet" />
     <script src="javascripts/application-93de88c9.js"></script>
     <link href="images/favicon-12ab9c9c.png" rel="icon" type="image/png" />
   </head>
@@ -52,8 +52,36 @@
    <div class="container">
   <div class="flexbox">
     <div class="left-part text-center hidden-xs hidden-sm">
-      <p>info part</p>
-    </div>
+
+    <!-- social links -->
+      <div class="socials-link">
+      <ul class="list-inline">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-google"></i></a></li>
+        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+      </ul>
+      </div>
+      <!-- bouton book -->
+      <a class="btn btn-primary" href="#" role="button">Réservez</a>
+
+    <!-- tel and adress -->
+      <div class="info">
+      </div>
+
+
+    <!-- timetable -->
+      <div class="timetable">
+      </div>
+
+      <!-- map -->
+      <div class="map">
+        <div id="map"></div>
+        <a href="">cliquer pour agrandir</a>
+      </div>
+    </div> <!-- left part -->
+
+
     <div class="right-part">
     <h1>Youmesoft Salon</h1>
     <p>Salon à coté de la gare</p>
@@ -76,6 +104,24 @@
     Made with <i class="fa fa-heart"></i> By Youmesoft
   </div>
 </div>
+
+
+
+
+   <script>
+       function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 58.5206, lng: 24.4098},
+          scrollwheel: false,
+          zoom: 8
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?Key=AIzaSyCzER7O10ZOUp7FloJzMe2r8X1GIQhgt7Q&callback=initMap">
+    </script>
+
 
   </body>
 </html>
